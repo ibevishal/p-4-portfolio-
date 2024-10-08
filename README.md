@@ -4,7 +4,7 @@ Welcome to my portfolio! This repository contains the HTML code for my personal 
 
 ## Features
 
-- **Responsive Design**: working on it.
+- **Responsive Design**: this site is optimized for dextop as well as mobiles.
 - **Interactive Elements**: Experience a variety of interactive components that enhance user engagement.
 - **Easy Navigation**: Find projects and information quickly with a user-friendly layout.
 
