@@ -13,3 +13,19 @@ li {
 .bdyggg{
     background-image: url(./Leonardo_Phoenix_Create_a_visually_striking_minimalist_image_t_2.jpg);
 }
+
+.li_hover{
+    display: none;
+    font-weight: bold;
+    min-width: 70px;
+    min-height:40px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-radius: 10%;
+    position: absolute;
+    right: 21%;
+}
+
+.project_hover:hover .li_hover{
+    display: block;
+}
