@@ -13,7 +13,6 @@ li {
 .bdyggg{
     background-image: url(./Leonardo_Phoenix_Create_a_visually_striking_minimalist_image_t_2.jpg);
 }
-
 .li_hover{
     display: none;
     font-weight: bold;
@@ -25,7 +24,73 @@ li {
     position: absolute;
     right: 21%;
 }
-
 .project_hover:hover .li_hover{
     display: block;
+}
+
+
+.all_hover{
+    display: none;
+    font-weight: bold;
+    height:480px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(223, 3, 3);
+    position: absolute;
+    left:0;
+    top: 90%;
+}
+
+.all:hover .all_hover{
+    display:inherit;
+}
+
+.all:hover{
+    background-color:rgb(212, 147, 147);
+    color: black;
+}
+
+.coded_hoverr{
+    display: none;
+    font-weight: bold;
+    height:480px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(65, 22, 193);
+    position: absolute;
+    left:0;
+    top: 90%;
+
+}
+.coded:hover .coded_hoverr{
+    display:inherit;
+}
+
+
+.designed_hoverrr{
+    display: none;
+    font-weight: bold;
+    height:460px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(117, 223, 3);
+    position: absolute;
+    left:0;
+    top: 90%;
+}
+
+.designed:hover .designed_hoverrr{
+    display: inherit;
+}
+.designed:hover{
+    background-color:rgb(212, 147, 147);
+    color: black;
+}
+
+.coded:hover{
+    background-color:rgb(212, 147, 147);
+    color: black;
+}
+
+#hover_img{
+    border-width: 10px;
+   border-style:outset;
+   border-color: aqua;
 }
