@@ -1,87 +1,617 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LOGIN PAGE</title>
-    <link rel="stylesheet" href="./p-4(portfolio).css">
-    <link rel="shortcut icon" href="https://www.shutterstock.com/image-vector/vishal-marathi-hindi-calligraphy-s-600w-2106014183.jpg">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-    <div class="bdyggg h-screen w-screen bg-blue-300">
-    <div class="hero-seaction h-[80%] w-[80%] absolute top-10 lg:top-20 left-[10%] lg:left-40">
-            <section class="img h-full lg:h-full lg:w-1/2 ">
-            <div>
-                <img class="img lg:h-[620px]" src="./Leonardo_Phoenix_Create_a_visually_striking_minimalist_image_t_2.jpg" alt="internet connection error">
-            </div>
-            </section>
 
-            <section class="content lg:mt-0 mt-5 h-[60%] w-full lg:h-full lg:w-[50%] bg-white absolute top-1/2 lg:top-0 lg:left-[50%] flex flex-col justify-evenly items-center">
-            <div class="input flex flex-col items-center justify-evenly h-[70%]">
-                <div class="st text-2xl lg:text-[300%] font-medium md:text-black lg:text-blue-500 text-red-600">
-                    Welcome to My Portfolio
-                </div>
-                <div class="detail text-[8px] lg:text-[70%] flex font-medium">
-                    Enter your detaiil to view My Portfolio
-                </div>
-                <div class="in1 lg:mt-0 mt-8 h-10 lg:w-1/2 border rounded-lg flex items-center">
-                    <span class="material-symbols-outlined">
-                    person
-                    </span>
-                <input class="input h-full w-full border rounded-lg" type="name" placeholder=".......Enter your name.......">
-                </div>
-                <div class="in2 h-10 lg:mt-0 mt-2 lg:w-1/2 border rounded-lg flex items-center">
-                <span class="material-symbols-outlined">
-                    lock
-                </span>
-                <input class="input h-full w-full border rounded-lg" type="email" placeholder=".......Enter your email......">
-                </div>
-                <div class="in3 h-10 lg:mt-0 mt-2 lg:w-1/2 border rounded-lg flex items-center">
-                <span class="material-symbols-outlined">
-                person
-                </span>
-                <input class="input h-full w-full border rounded-lg" type="number" placeholder=".......Enter your phone.......">
-                </div>
-                <!-- <div class="in4 h-10 w-[100%] border rounded-lg flex items-center">
-                <span class="material-symbols-outlined">
-                    lock
-                </span>
-                <input  type="password" placeholder="      create password">
-                </div> -->
-                <div class="btn lg:mt-0 mt-8 h-10 w-[60%] lg:w-1/2 border rounded-lg flex items-center justify-center text-sm  bg-blue-800 font-medium text-sm text-white"><a href="./homepage.html">
-                <input type="button" value="GO TO PORTFOLIO"></a>
-                </div>
-                </div>
-               
-            <!-- <div class="or h-[18%] w-[53%] flex flex-col items-center justify-between">
-                <div  class="singn font-medium">
-                Or Sign up with 
-                </div>
-                <div class="icon flex ">
-                    <span class="material-symbols-outlined border p-[4px]">
-                    google
-                    </span>
-                    <span                class="material-symbols-outlined border p-[4px]">
-                    google
-                    </span>
-                </div> -->
-                
-                <!-- <div class="alre flex">
-                Already have an account!
-                
-                <div class="in ml-2 font-medium text-blue-800"><a href="#"> Sign in</a>
-                </div></div>
+<head>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ibe.vishal</title>
+
+        <!-- ✅ Tailwind via CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <!-- Favicon -->
+        <link rel="shortcut icon"
+            href="https://www.shutterstock.com/image-vector/vishal-marathi-hindi-calligraphy-s-600w-2106014183.jpg">
+
+        <!-- Optional: Your own custom CSS (if needed) -->
+        <link rel="stylesheet" href="./pcss.css">
+
+        <!-- Google Material Icons -->
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    </head>
+
+</head>
+
+<body>
+    <div>
+        <nav class="nav backdrop-blur-sm h-10 w-full  text-white  fixed list-none flex items-center z-50">
+
+            <div class="nav_button w-full flex items-center justify-end mr-10">
+                <ul class="ul flex">
+                    <li>
+                        <a class="hover:text-blue-500 hover:font-bold" href="#page_one">
+                            <!-- for about page -->
+                            About me
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#page_four" class="hover:text-blue-500   hover:font-bold">Project
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="hover:text-blue-500 pr-4  hover:font-bold" href="#page_three">
+                            Skills
+                        </a>
+                    </li>
+
+
+                </ul>
+                <a href="#page_five"
+                    class="ul_button bg-white text-black px-3 rounded-3xl hover:bg-sky-300 hover:font-semibold font-medium text-sm h-7 flex items-center justify-center">
+                    CONTACT ME
+                </a>
             </div>
-                 -->
-                
-                
+        </nav>
+    </div>
+
+    <div id="back" class="hero_section bg-black h-screen w-full relative">
+        <section
+            class="hero_section_first_half lg:h-screen w-1/2 text-white lg:text-black lg:bg-gray-300 relative z-10">
+            <div
+                class="hero_section_first_half_div h-60 w-80 absolute lg:top-60 hover:scale-110 top-20 lg:left-60 left-40">
+                <!-- edit -->
+                <p class="p-1 font-bold">
+                    Hi, I am
+                </p>
+                <h2 class="h2-1 text-3xl  font-bold mt-6">
+                    Vishal Kumar
+                </h2>
+                <p class="p-2 text-gray-400  lg:text-gray-500 font-medium">
+                    Front-end Developer/ UI Designer
+                </p>
+                <div class="logo_first_page text-blue-300 lg:text-black flex ">
+                    <span
+                        class="material-symbols-outlined  h-[40px] w-[40px] hover:text-purple-500 flex hover:scale-110 items-center pl-7 pt-0 font-bold ">
+                        <a target="_blank" href="mailto:vishal_24a12res768@iitp.ac.in">
+                            @
+                        </a>
+                    </span>
+                    <span
+                        class="material-symbols-outlined  h-[40px] w-[40px] hover:text-sky-700 hover:scale-110 flex items-center pl-4 font-bold mx-5 pt-3">
+                        <a target="_blank" rel="noopener" href="https://github.com/ibevishal">
+                            Face
+                        </a>
+                    </span>
+                    <span
+                        class="material-symbols-outlined h-[40px] w-[40px] font-bold text-3xl pl-[6px] pt-3 hover:scale-110 hover:text-red-600 items-center flex ">
+                        <a class="" target="_blank" rel="noopener" href="https://www.linkedin.com/in/ibe-vishal/">
+                            link
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </section>
+        <section
+            class="hero_section_second_half lg:h-[100vh] lg:w-1/2 lg:top-[-100%] lg:left-[50%] relative lg:bg-black">
+            <div class="img_p1">
+                <img class="imgg lg:h-[97vh] h-[326.2px] absolute left-[106%] top-10 lg:left-28 lg:top-[-40px]"
+                    src="../file/1812881-radha-krishna-minimal-wallpaper-hope-you-like-it.jpg" alt="#">
+                <!-- image link -->
+            </div>
+        </section>
+        <section
+            class="page_one lg:w-full h-1/2 lg:h-40 w-full bg-gray-800 absolute top-[39%] lg:top-[81%] text-white z-20">
+            <div class="footer__1st   text-3xl pt-4 hover:text-sky-200 text-center">
+                <p class="p_f  text-2xl pt-2 text-gray-300 text-center">
+
+                    Welcome to My Portfolio.
+                    <br>
+
+                    <button
+                        class="group mt-6 w-40 relative dark:bg-neutral-800 bg-neutral-200 rounded-full p-px overflow-hidden">
+                        <span class="absolute inset-0 rounded-full overflow-hidden">
+                            <span class="inset-0 absolute pointer-events-none select-none">
+                                <span class="block -translate-x-1/2 -translate-y-1/3 size-24 blur-xl"
+                                    style="background: linear-gradient(135deg, rgb(122, 105, 249), rgb(242, 99, 120), rgb(245, 131, 63));"></span>
+                            </span>
+                        </span>
+
+            <span class="inset-0 absolute pointer-events-none select-none border-glow-translate">
+                <span class="block z-0 h-full w-12 blur-xl -translate-x-1/2 rounded-full border-glow-scale"></span>
+            </span>
+
+                        <span
+                            class="flex items-center justify-center gap-1 relative z-[1] dark:bg-neutral-950/90 bg-neutral-50/90 rounded-full py-2 px-4 pl-2 w-full">
+                            <span
+                                class="relative group-hover:scale-105 transition-transform group-hover:rotate-[360deg] duration-500">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" class="opacity-80 dark:opacity-100"
+                                    style="animation: 14s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s infinite alternate none running star-rotate;">
+                                    <path
+                                        d="M11.5268 2.29489C11.5706 2.20635 11.6383 2.13183 11.7223 2.07972C11.8062 2.02761 11.903 2 12.0018 2C12.1006 2 12.1974 2.02761 12.2813 2.07972C12.3653 2.13183 12.433 2.20635 12.4768 2.29489L14.7868 6.97389C14.939 7.28186 15.1636 7.5483 15.4414 7.75035C15.7192 7.95239 16.0419 8.08401 16.3818 8.13389L21.5478 8.88989C21.6457 8.90408 21.7376 8.94537 21.8133 9.00909C21.8889 9.07282 21.9452 9.15644 21.9758 9.2505C22.0064 9.34456 22.0101 9.4453 21.9864 9.54133C21.9627 9.63736 21.9126 9.72485 21.8418 9.79389L18.1058 13.4319C17.8594 13.672 17.6751 13.9684 17.5686 14.2955C17.4622 14.6227 17.4369 14.9708 17.4948 15.3099L18.3768 20.4499C18.3941 20.5477 18.3835 20.6485 18.3463 20.7406C18.3091 20.8327 18.2467 20.9125 18.1663 20.9709C18.086 21.0293 17.9908 21.0639 17.8917 21.0708C17.7926 21.0777 17.6935 21.0566 17.6058 21.0099L12.9878 18.5819C12.6835 18.4221 12.345 18.3386 12.0013 18.3386C11.6576 18.3386 11.3191 18.4221 11.0148 18.5819L6.3978 21.0099C6.31013 21.0563 6.2112 21.0772 6.11225 21.0701C6.0133 21.0631 5.91832 21.0285 5.83809 20.9701C5.75787 20.9118 5.69563 20.8321 5.65846 20.7401C5.62128 20.6482 5.61066 20.5476 5.6278 20.4499L6.5088 15.3109C6.567 14.9716 6.54178 14.6233 6.43534 14.2959C6.32889 13.9686 6.14441 13.672 5.8978 13.4319L2.1618 9.79489C2.09039 9.72593 2.03979 9.63829 2.01576 9.54197C1.99173 9.44565 1.99524 9.34451 2.02588 9.25008C2.05652 9.15566 2.11307 9.07174 2.18908 9.00788C2.26509 8.94402 2.3575 8.90279 2.4558 8.88889L7.6208 8.13389C7.96106 8.08439 8.28419 7.95295 8.56238 7.75088C8.84058 7.54881 9.0655 7.28216 9.2178 6.97389L11.5268 2.29489Z"
+                                        fill="url(#paint0_linear_171_8212)" stroke="url(#paint1_linear_171_8212)"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <defs>
+                                        <linearGradient id="paint0_linear_171_8212" x1="-0.5" y1="9" x2="15.5" y2="-1.5"
+                                            gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#7A69F9"></stop>
+                                            <stop offset="0.575" stop-color="#F26378"></stop>
+                                            <stop offset="1" stop-color="#F5833F"></stop>
+                                        </linearGradient>
+                                        <linearGradient id="paint1_linear_171_8212" x1="-0.5" y1="9" x2="15.5" y2="-1.5"
+                                            gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#7A69F9"></stop>
+                                            <stop offset="0.575" stop-color="#F26378"></stop>
+                                            <stop offset="1" stop-color="#F5833F"></stop>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <span
+                                    class="rounded-full size-11 absolute opacity-0 dark:opacity-30 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 blur-lg"
+                                    style="animation: 14s ease-in-out 0s infinite alternate none running star-shine; 
+               background: linear-gradient(135deg, rgb(59, 196, 242), rgb(122, 105, 249), rgb(242, 99, 120), rgb(245, 131, 63));"></span>
+                            </span>
+                            <span
+                                class="bg-gradient-to-b ml-1.5 dark:from-white dark:to-white/50 from-neutral-950 to-neutral-950/50 bg-clip-text text-xs text-transparent group-hover:scale-105 transition transform-gpu">
+                                Read More
+                            </span>
+                        </span>
+                    </button>
+                </p>
             </div>
         </section>
     </div>
-</div>
+
+
+    <div id="page_one"
+        class="page_two h-[100vh] mt-[-95px] lg:mt-[-20px] lg:m-0 w-[636.6px] lg:w-full relative flex flex-col justify-between  bg-gradient-to-br from-gray-800 via-gray-700 to-gray-600  items-center py-[40px]">
+
+        <p
+            class="page_2_p1 px-10  lg:px-[30px] lg:py-[8px] border-[3.5px] border-gray-700 text-gray-400 font-bold mb-[4%] animate-slideIn">
+            A B O U T &nbsp M E
+        </p>
+
+        <style>
+            @keyframes slideIn {
+                0% {
+                    opacity: 0;
+                    transform: translateX(-700px);
+                }
+
+                100% {
+                    opacity: 1;
+                    transform: translateX(0);
+                }
+            }
+
+            .animate-slideIn {
+                animation: slideIn 1s ease-in;
+            }
+        </style>
+
+        <p
+            class="page_2_p2 lg:px-[540px] lg:mb-[-5%] lg:p-0 p-[20px] ml-[20px] lg:ml-0 lg:mt-[-90px] mt-[-40px] text-purple-700">
+            Welcome to my portfolio! I’m a passionate designer and developer dedicated to creating engaging,
+            user-friendly experiences. With a strong foundation in both design and development, I blend creativity with
+            technical skills to bring innovative ideas to life.
+        </p>
+
+        <div>
+            <a class="page_2_a border-x-[2px] border-red-500 px-[10px] lg:px-[15px] font-medium text-[10px] text-blue-500 transition duration-300 hover:text-red-500"
+                href="#">
+                EXPLORE
+            </a>
+        </div>
+
+        <p class="page_2_p4 font-bold text-[x-small] lg:mt-[-2%] lg:mb-[8%]">
+            - - - - \ \ V / / - - - -
+        </p>
+
+        <div class="page_two_design lg:px-0 px-[40px] lg:pr-[800px] lg:absolute lg:top-[50%] lg:left-[15%]">
+            <p class="dee font-bold text-lg transition duration-300 hover:text-yellow-500 hover:scale-105">
+                DESIGN
+            </p>
+            <p class="pp text-yellow-600  ">
+                My design philosophy centers around simplicity and functionality. I strive to create visually appealing
+                interfaces that resonate with users. I enjoy exploring typography, color theory, and layout principles
+                to craft designs that not only look great but also enhance usability.
+            </p>
+        </div>
+
+        <div class="page_two_dev lg:px-0 px-[40px] lg:pr-[200px] lg:absolute lg:top-[50%] lg:left-[55%]">
+            <p class="de font-bold transition duration-300 hover:text-green-600 text-lg hover:scale-105">
+                DEVELOPMENT
+            </p>
+            <p class="ppp text-green-700">
+                As a developer, I specialize in building responsive and efficient websites and applications. I’m
+                proficient in various programming languages and frameworks, allowing me to implement seamless
+                functionality and ensure optimal performance across devices.
+            </p>
+        </div>
+
+        <div class="page_two_maint px-[40px] lg:px-[560px]">
+            <p class="me font-bold transition duration-300 hover:text-pink-600 text-lg hover:scale-105">
+                Maintenance
+            </p>
+            <p class="p1 text-pink-700">
+                I believe that ongoing maintenance is crucial for the longevity of any project. I offer support to keep
+                your digital products running smoothly, ensuring updates, bug fixes, and enhancements are handled
+                promptly.
+            </p>
+        </div>
+
+        <p class="page_2_pp font-bold text-[x-small] lg:mt-[-2%]">
+            - - - - \ \ V / / - - - -
+        </p>
+
+    </div>
+
+
+
+    <div id="page_three"
+        class="page_three lg:h-[100vh] w-[636.6px] lg:w-full bg-gradient-to-br from-gray-800 via-gray-700 to-gray-600 relative flex flex-col items-center lg:py-[40px]">
+        <p class="page_2_p1 px-[50px] py-[8px] border-[3.5px] border-gray-700 text-gray-400  font-bold">
+            S K I L L S
+        </p>
+
+        <div class="margin lg:mt-20">
+            <p class="bold lg:mt-0 mt-10 font-bold">
+                USING NOW:
+            </p>
+            <div class="logo_2 flex mt-10">
+                <!-- Logos with hover and animation -->
+                <img class="material-symbols-outlined h-[100px] w-[100px] lg:h-[70px] lg:w-[70px] bg-gray-400 text-[13px] items-center flex font-bold mx-5 transition-transform duration-300 transform hover:scale-110 hover:rotate-6 hover:shadow-xl"
+                    src="https://dynamic.brandcrowd.com/asset/logo/7754b529-3f72-4c25-b784-e657119d6c0f/logo-search-grid-1x?logoTemplateVersion=2&v=638610224774600000&text=htmls&colorpalette=blue"
+                    alt="HTML Logo">
+
+                <img class="material-symbols-outlined h-[100px] w-[100px] lg:h-[70px] lg:w-[70px] bg-gray-400 text-[13px] items-center flex font-bold mx-5 transition-transform duration-300 transform hover:scale-110 hover:rotate-6 hover:shadow-xl"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyfXdKH7SrCVpLx-h0j9VSLf7LQxwWgptJNw&s"
+                    alt="CSS Logo">
+
+                <img class="material-symbols-outlined h-[100px] w-[100px] lg:h-[70px] lg:w-[70px] bg-gray-400 text-[13px] items-center flex font-bold mx-5 transition-transform duration-300 transform hover:scale-110 hover:rotate-6 hover:shadow-xl"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH1vSgAafzqeJa0y-Cg2qqIyzhx34N-0uzxw&s"
+                    alt="JavaScript Logo">
+
+                <img class="material-symbols-outlined h-[100px] w-[100px] lg:h-[70px] lg:w-[70px] bg-gray-400 text-[13px] items-center flex font-bold mx-5 transition-transform duration-300 transform hover:scale-110 hover:rotate-6 hover:shadow-xl"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/800px-Unofficial_JavaScript_logo_2.svg.png"
+                    alt="JS Logo">
+            </div>
+
+            <div class="logo_3 flex mt-7">
+                <!-- More logos with hover and animation -->
+                <img class="material-symbols-outlined h-[100px] w-[100px] lg:h-[70px] lg:w-[70px] bg-gray-400 text-[13px] items-center flex font-bold mx-5 transition-transform duration-300 transform hover:scale-110 hover:rotate-6 hover:shadow-xl"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT14KQFZKcw5oDCW9D6xB1So8ewZIX1FyDaJg&s"
+                    alt="NodeJS Logo">
+
+                <img class="material-symbols-outlined h-[100px] w-[100px] lg:h-[70px] lg:w-[70px] bg-gray-400 text-[13px] items-center flex font-bold mx-5 transition-transform duration-300 transform hover:scale-110 hover:rotate-6 hover:shadow-xl"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnLrl2zioDq1Q4nzIoYCqJTG7ZttFqYM2J-pMd8sBM-TnhLI0Jtq-Yq9hL1AG_vSiKkyY&usqp=CAU"
+                    alt="React Logo">
+
+                <img class="material-symbols-outlined h-[100px] w-[100px] lg:h-[70px] lg:w-[70px] bg-gray-400 text-[13px] items-center flex font-bold mx-5 transition-transform duration-300 transform hover:scale-110 hover:rotate-6 hover:shadow-xl"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHXsy8FDyJpLBYS4Lncoq-_o6FO0__AYKydQ&s"
+                    alt="MongoDB Logo">
+
+                <img class="material-symbols-outlined h-[100px] w-[100px] lg:h-[70px] lg:w-[70px] bg-gray-400 text-[13px] items-center flex font-bold mx-5 transition-transform duration-300 transform hover:scale-110 hover:rotate-6 hover:shadow-xl"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoUX5LMRa7atIsNfl0nP3DaUaV4URhV0PHfA&s"
+                    alt="Express Logo">
+            </div>
+        </div>
+
+        <div class="margin mt-10">
+            <p class="bold font-bold">
+                LEARNING:
+            </p>
+            <div class="logo_2 flex lg:mt-10">
+                <!-- Learning logos with hover and animation -->
+                <img class="material-symbols-outlined h-[100px] w-[100px] lg:h-[70px] lg:w-[70px] bg-gray-400 text-[13px] items-center flex font-bold mx-5 transition-transform duration-300 transform hover:scale-110 hover:rotate-6 hover:shadow-xl"
+                    src="https://www.smartsight.in/wp-content/uploads/2021/09/NodeJS.jpg" alt="NodeJS Logo">
+
+                <img class="material-symbols-outlined h-[100px] w-[100px] lg:h-[70px] lg:w-[70px] bg-gray-400 text-[13px] items-center flex font-bold mx-5 transition-transform duration-300 transform hover:scale-110 hover:rotate-6 hover:shadow-xl"
+                    src="https://pbs.twimg.com/profile_images/1255113654049128448/J5Yt92WW_400x400.png"
+                    alt="React Logo">
+
+                <img class="material-symbols-outlined h-[100px] w-[100px] lg:h-[70px] lg:w-[70px] bg-gray-400 text-[13px] items-center flex font-bold mx-5 transition-transform duration-300 transform hover:scale-110 hover:rotate-6 hover:shadow-xl"
+                    src="https://cdn.worldvectorlogo.com/logos/mongodb-icon-2.svg" alt="MongoDB Logo">
+
+                <img class="material-symbols-outlined h-[100px] w-[100px] lg:h-[70px] lg:w-[70px] bg-gray-400 text-[13px] items-center flex font-bold mx-5 transition-transform duration-300 transform hover:scale-110 hover:rotate-6 hover:shadow-xl"
+                    src="https://cdn-icons-png.flaticon.com/512/5968/5968381.png" alt="Express Logo">
+            </div>
+        </div>
+
+        <div class="margin mt-10">
+            <p class="bold font-bold">
+                OTHER SKILLS:
+            </p>
+            <div>
+                <div class="logo_2 flex lg:mb-0 mb-20 mt-10">
+                    <!-- Other skills logos with hover and animation -->
+                    <img class="material-symbols-outlined h-[100px] w-[100px] lg:h-[70px] lg:w-[70px] text-[13px] items-center flex font-bold mx-5 transition-transform duration-300 transform hover:scale-110 hover:rotate-6 hover:shadow-xl"
+                        src="https://cdn-icons-png.flaticon.com/512/6819/6819089.png" alt="Python Logo">
+
+                    <img class="material-symbols-outlined h-[100px] w-[100px] lg:h-[70px] lg:w-[70px] text-[13px] items-center flex font-bold mx-5 transition-transform duration-300 transform hover:scale-110 hover:rotate-6 hover:shadow-xl"
+                        src="https://cdn3d.iconscout.com/3d/premium/thumb/c-3d-icon-download-in-png-blend-fbx-gltf-file-formats--object-oriented-programming-language-programing-code-data-web-development-pack-website-icons-8478891.png?f=webp"
+                        alt="C++ Logo">
+
+                    <img class="material-symbols-outlined h-[100px] w-[100px] lg:h-[70px] lg:w-[70px] text-[13px] items-center flex font-bold mx-5  transition-transform duration-300 transform hover:scale-110 hover:rotate-6 hover:shadow-xl"
+                        src="https://cdn-icons-png.flaticon.com/512/5619/5619782.png" alt="Git Logo">
+
+                    <img class="material-symbols-outlined h-[100px] w-[100px] lg:h-[70px] lg:w-[70px] text-[13px] items-center flex font-bold mx-5 transition-transform duration-300 transform hover:scale-110 hover:rotate-6 hover:shadow-xl"
+                        src="https://logodownload.org/wp-content/uploads/2019/10/python-logo-2.png" alt="Python Logo">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="page_four" class="page_123 bg-gradient-to-r from-purple-800 via-pink-800 to-yellow-700 h-[70vh] w-[636.6px] lg:w-full relative">
+        <section class="p_j_one absolute h-[40%] w-full flex flex-col items-center">
+            <p
+                class="page_123_p1 px-[50px] py-[8px] border-[3.5px] border-gray-300 font-bold mt-[100px] text-gray-300 tracking-widest ">
+                P R O J E C T S
+            </p>
+        </section>
+        <section
+            class="p_j_1 absolute top-[27%]  w-full lg:px-96 ">
+            <div class="all_hover w-full lg:flex">
+                <!-- Project Section -->
+                <div
+                    class="card m-auto text-gray-300 w-[clamp(260px,80%,300px)] hover:brightness-90 transition-all cursor-pointer group bg-gradient-to-tl from-gray-900 to-gray-950 hover:from-gray-800 hover:to-gray-950 border-r-2 border-t-2 border-gray-900 m-4 rounded-lg overflow-hidden relative">
+                    <div class="px-8 py-10">
+                        <div
+                            class="bg-orange-500 w-10 h-10 rounded-full rounded-tl-none mb-4 group-hover:-translate-y-1 group-hover:shadow-xl group-hover:shadow-red-800 transition-all">
+                        </div>
+                        <div class="uppercase font-bold text-xl">
+                            NCECCI_pj
+                        </div>
+                        <div class="text-gray-400 text-sm pt-2">
+                            Front-End
+                        </div>
+                        <div class="text-gray-400 mt-8">
+                            <a target="_blank" href="./ncecci/index.html" class="font-bold text-blue-600 hover:text-red-500 ">Click Here to view</a>
+                            <p class="text-sm text-red-300">@ibe.vishal</p>
+                        </div>
+                    </div>
+
+
+                    <div
+                        class="h-2 w-full bg-gradient-to-l via-yellow-500 group-hover:blur-xl blur-2xl m-auto rounded transition-all absolute bottom-0">
+                    </div>
+                    <div
+                        class="h-0.5 group-hover:w-full bg-gradient-to-l  via-yellow-950 group-hover:via-yellow-500 w-[70%] m-auto rounded transition-all">
+                    </div>
+                </div>
+
+                <div
+                    class="card m-auto text-gray-300 w-[clamp(260px,80%,300px)] hover:brightness-90 transition-all cursor-pointer group bg-gradient-to-tl from-gray-900 to-gray-950 hover:from-gray-800 hover:to-gray-950 border-r-2 border-t-2 border-gray-900 m-4 rounded-lg overflow-hidden relative">
+                    <div class="px-8 py-10">
+                        <div
+                            class="bg-orange-500 w-10 h-10 rounded-full rounded-tl-none mb-4 group-hover:-translate-y-1 group-hover:shadow-xl group-hover:shadow-red-900 transition-all">
+                        </div>
+                        <div class="uppercase font-bold text-xl">
+                            STUDY PLATFORM
+                        </div>
+                        <div class="text-gray-400 text-sm pt-2">
+                            Front-End
+                        </div>
+                        <div class="text-gray-400 mt-8">
+                            <a target="_blank"  href="./ibe.vishal/index.html" class="font-bold text-blue-600 hover:text-red-500 ">Click Here to view</a>
+                            <p class="text-sm text-red-300">@ibe.vishal</p>
+                        </div>
+                    </div>
+
+
+                    <div
+                        class="h-2 w-full bg-gradient-to-l via-yellow-500 group-hover:blur-xl blur-2xl m-auto rounded transition-all absolute bottom-0">
+                    </div>
+                    <div
+                        class="h-0.5 group-hover:w-full bg-gradient-to-l  via-yellow-950 group-hover:via-yellow-500 w-[70%] m-auto rounded transition-all">
+                    </div>
+                </div>
+
+
+
+                  <div
+                    class="card m-auto text-gray-300 w-[clamp(260px,80%,300px)] hover:brightness-90 transition-all cursor-pointer group bg-gradient-to-tl from-gray-900 to-gray-950 hover:from-gray-800 hover:to-gray-950 border-r-2 border-t-2 border-gray-900 m-4 rounded-lg overflow-hidden relative">
+                    <div class="px-8 py-10">
+                        <div
+                            class="bg-orange-500 w-10 h-10 rounded-full rounded-tl-none mb-4 group-hover:-translate-y-1 group-hover:shadow-xl group-hover:shadow-red-900 transition-all">
+                        </div>
+                        <div class="uppercase font-bold text-xl">
+                            PJ_IGI
+                        </div>
+                        <div class="text-gray-400 text-sm pt-2">
+                            Front-End
+                        </div>
+                        <div class="text-gray-400 mt-8">
+                            <a  target="_blank" rel="noopener" href="https://ibevishal.github.io/PRoject-IGI/" class="font-bold text-blue-600 hover:text-red-500 ">Click Here to view</a>
+                            <p class="text-sm text-red-300">@ibe.vishal</p>
+                        </div>
+                    </div>
+
+
+                    <div
+                        class="h-2 w-full bg-gradient-to-l via-yellow-500 group-hover:blur-xl blur-2xl m-auto rounded transition-all absolute bottom-0">
+                    </div>
+                    <div
+                        class="h-0.5 group-hover:w-full bg-gradient-to-l  via-yellow-950 group-hover:via-yellow-500 w-[70%] m-auto rounded transition-all">
+                    </div>
+                </div>
+
+                  <div
+                    class="card m-auto text-gray-300 w-[clamp(260px,80%,300px)] hover:brightness-90 transition-all cursor-pointer group bg-gradient-to-tl from-gray-900 to-gray-950 hover:from-gray-800 hover:to-gray-950 border-r-2 border-t-2 border-gray-900 m-4 rounded-lg overflow-hidden relative">
+                    <div class="px-8 py-10">
+                        <div
+                            class="bg-orange-500 w-10 h-10 rounded-full rounded-tl-none mb-4 group-hover:-translate-y-1 group-hover:shadow-xl group-hover:shadow-red-900 transition-all">
+                        </div>
+                        <div class="uppercase font-bold text-xl">
+                            Lex_IQ Chat Analyzer
+                        </div>
+                        <div class="text-gray-400 text-sm pt-2">
+                              WhatsApp Chat Analyzer
+                        </div>
+                        <div class="text-gray-400 mt-8">
+                            <a  target="_blank" rel="noopener" href="https://ibevishal.streamlit.app/" class="hover:text-red-500  font-bold text-blue-600">Click Here to view</a>
+                            <p class="text-sm text-red-300">@ibe.vishal</p>
+                        </div>
+                    </div>
+                    <div
+                        class="h-2 w-full bg-gradient-to-l via-yellow-500 group-hover:blur-xl blur-2xl m-auto rounded transition-all absolute bottom-0">
+                    </div>
+                    <div
+                        class="h-0.5 group-hover:w-full bg-gradient-to-l  via-yellow-950 group-hover:via-yellow-500 w-[70%] m-auto rounded transition-all">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- The component code starts  -->
+    <div id="page_five" class="page_five pt-2 from-amber-100 via-rose-300 to-red-500 bg-gradient-to-br">
+        <div class="heading mx-auto text-center ">
+            <h1 class="mx-auto my-5 text-center sm:text-4xl text-3xl font-bold">Have Some Questions?</h1>
+            <div class="contact-icons flex sm:flex-row flex-col items-center justify-center text-center mx-auto">
+                <div class="flex flex-row my-2"><img src="https://img.icons8.com/material-sharp/24/marker.png"
+                        alt="location icon" width="25" height="25" class="mr-2">
+                    Bihar</div>
+                <div class="flex flex-row my-2"><img src="https://img.icons8.com/material-rounded/25/phone--v1.png"
+                        alt="phone icon" width="25" height="25" class="ml-5 mr-2">
+                    @ibe.vishal</div>
+                <div class="flex flex-row my-2"><img src="https://img.icons8.com/material-rounded/96/mail.png"
+                        alt="mail icon" width="25" height="25" class="ml-5 mr-2">
+                    Vishal_24a12res768@iitp.ac.in </div>
+            </div>
+        </div>
+        <div class="form-portion  bg-stone-100 lg:pb-5 sm:w-[80%] w-[90%] mx-auto">
+            <form class="p-5 mt-5 ">
+                <div class="initials flex md:flex-row flex-col justify-evenly">
+                    <label for="full-name" class="text-xl md:mb-0 mb-1">Full Name : </label>
+                    <input type="text" name="full-name" id="" placeholder="Enter your full name"
+                        class="md:w-[35%] w-1/1 px-4 py-2 md:mb-0 mb-3 rounded-xl">
+
+                    <label for="full-name" class="text-xl md:mb-0 mb-1">Email Id : </label>
+                    <input type="email" name="email-id" id="" placeholder="Enter your email"
+                        class="md:w-[35%] w-1/1 px-4 py-2 rounded-xl">
+                </div>
+                <div class="md:p-5 p-1 sm:mt-1 mt-1">
+
+                    <div class="md:mt-1 mt-2">
+                        <label for="subject" class="text-xl">Subject : </label><br>
+                        <input type="text" name="subject" placeholder="Mention your area of concern"
+                            class=" w-[100%] px-4 py-2 mt-1 rounded-xl">
+                    </div>
+                    <div class="mt-5">
+                        <label for="subject" class="text-xl">Questions / Message : </label><br>
+                        <textarea name="message" rows="5" placeholder="Write your message here"
+                            class="w-[100%] px-4 py-2 rounded-xl appearance-none text-heading text-md"
+                            autoComplete="off" spellCheck="false">
+
+                        </textarea>
+                    </div>
+                </div>
+                <div class="btn mt-2 w-[100%] bg-transparent flex items-center">
+                    <button type="submit"
+                        class="px-4 py-2 mx-auto rounded-xl text-center text-xl bg-black text-white hover:text-black hover:bg-white hover:font-bold hover:shadow-xl">Send
+                        Message</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- The component code ends -->
+    <footer class=" bg-black w-[636.6px] lg:w-full h-[30%] text-gray-300 flex flex-col items-center justify-evenly">
+        <a href="#back">
+            <button
+                class="bg-white text-center my-2 w-44 rounded-2xl h-10 relative text-black text-xl font-semibold group"
+                type="button">
+                <div
+                    class="bg-green-400 rounded-xl h-8 w-1/4 flex items-center justify-center absolute left-1 top-[4px] group-hover:w-[170px] z-10 duration-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" height="25px" width="25px">
+                        <path d="M224 480h640a32 32 0 1 1 0 64H224a32 32 0 0 1 0-64z" fill="#000000"></path>
+                        <path
+                            d="m237.248 512 265.408 265.344a32 32 0 0 1-45.312 45.312l-288-288a32 32 0 0 1 0-45.312l288-288a32 32 0 1 1 45.312 45.312L237.248 512z"
+                            fill="#000000"></path>
+                    </svg>
+                </div>
+                <p class="translate-x-2">Go Back</p>
+            </button>
+
+        </a>
+        <div class="logo_2">
+
+            <svg width="0" height="0" style="position: absolute;">
+                <defs>
+                    <clipPath id="squircleClip" clipPathUnits="objectBoundingBox">
+                        <path d="M 0,0.5 C 0,0 0,0 0.5,0 S 1,0 1,0.5 1,1 0.5,1 0,1 0,0.5"></path>
+                    </clipPath>
+                </defs>
+            </svg>
+
+            <div class="relative">
+                <div
+                    class="absolute inset-0 bg-black/20 backdrop-blur-xl rounded-2xl border border-white/10 shadow-2xl">
+                </div>
+
+                <div class="relative flex items-end gap-x-2 p-1">
+                    <div class="relative">
+                        <div style="clip-path: url(#squircleClip)"
+                            class="w-14 h-12 bg-gradient-to-br from-gray-700 to-gray-900 rounded-xl flex items-center justify-center shadow-lg border border-gray-600/50 cursor-pointer transform transition-all duration-300 ease-out hover:scale-110 hover:-translate-y-2 hover:shadow-2xl">
+                            <a target="_blank" rel="noopener" title="GitHub Profile" href="https://github.com/ibevishal"><svg viewBox="0 0 24 24"
+                                    fill="currentColor" class="h-7 w-8 text-white" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z">
+                                    </path>
+                                </svg></a>
+                        </div>
+                    </div>
+
+                    <div class="relative">
+                        <div style="clip-path: url(#squircleClip)"
+                            class="w-14 h-12 bg-gradient-to-br from-blue-600 to-blue-800 rounded-xl flex items-center justify-center shadow-lg border border-blue-500/50 cursor-pointer transform transition-all duration-300 ease-out hover:scale-110 hover:-translate-y-2 hover:shadow-2xl">
+                            <a target="_blank" title="LinkedIn Profile" href="www.linkedin.com/in/ibe-vishal"> <svg viewBox="0 0 24 24"
+                                    fill="currentColor" class="h-7 w-8 text-white" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z">
+                                    </path>
+                                </svg></a>
+                        </div>
+                    </div>
+
+                    <div class="squircle-clip w-14 h-12 bg-gradient-to-br from-pink-500 via-purple-600 to-yellow-500 
+           rounded-xl flex items-center justify-center shadow-lg border border-gray-600/50 
+           cursor-pointer transform transition-all duration-300 ease-out 
+           hover:scale-110 hover:-translate-y-2 hover:shadow-2xl">
+                        <a href="https://www.instagram.com/ibe.vishal" target="_blank" rel="noopener" title="Instagram Profile"><svg
+                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+                                class="h-8 w-8 text-white">
+                                <path
+                                    d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm5.25-.75a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0z" />
+                            </svg></a>
+                    </div>
+
+                    <div class="relative">
+                        <div style="clip-path: url(#squircleClip)"
+                            class="w-14 h-12 bg-gradient-to-br from-indigo-600 to-indigo-800 rounded-xl flex items-center justify-center shadow-lg border border-indigo-500/50 cursor-pointer transform transition-all duration-300 ease-out hover:scale-110 hover:-translate-y-2 hover:shadow-2xl">
+                            <svg viewBox="0 0 24 24" fill="currentColor" class="h-6 w-8 text-white"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419-.0189 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1568 2.4189Z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <p>
+            <b>@2024 VISHAL Kumar </b>All Right Reserved
+        </p>
+    </footer>
+    </div>
 </body>
+
 </html>
